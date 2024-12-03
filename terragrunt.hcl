@@ -1,5 +1,4 @@
 terraform {
   # Use relative path to refer to the module
-  source = "tfr://penja.scalr.io/env-v0ojkc698lr47ibhs/two/double?version=1.0.3"
+  source = "tfr://hesher.alfiia-master.testenv.scalr.dev/acc-v0ok5vem7c4f0l33d/drums/module?version=0.1.4"
 }
-
