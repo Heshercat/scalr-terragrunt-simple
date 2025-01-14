@@ -46,11 +46,3 @@ output "resource_output" {
     resource_id = var.resource_id
   }
 }
-
-output "module_name" {
-  value = "module-a" # or the actual value you intend to output
-}
-
-output "resource_id" {
-   value = "id"
-}
