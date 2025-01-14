@@ -6,8 +6,6 @@ terraform {
   source = "../../base/main.tf"
 }
 
-dependencies { paths = ["../../terragrunt-module1/module-a"] }
-
 dependency "module-a" {
   config_path = "../../terragrunt-module1/module-a"
   mock_outputs = {
