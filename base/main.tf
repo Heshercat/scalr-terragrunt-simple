@@ -47,8 +47,8 @@ output "resource_output" {
   }
 }
 
-  output "module_name" {
-   value = "foo"
+output "module_name" {
+  value = "module-a" # or the actual value you intend to output
 }
 
 output "resource_id" {
