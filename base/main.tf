@@ -46,3 +46,11 @@ output "resource_output" {
     resource_id = var.resource_id
   }
 }
+
+  output "module_name" {
+   value = "foo"
+}
+
+output "resource_id" {
+   value = "id"
+}
