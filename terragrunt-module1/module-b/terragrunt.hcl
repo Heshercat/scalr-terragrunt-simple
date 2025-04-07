@@ -8,5 +8,5 @@ terraform {
 
 inputs = {
   module_name = "module-b"
-  resource_id = "resource-002"
+  resource_id = "resource-002-check-pr-9"
 }
