@@ -10,6 +10,6 @@ terraform {
 
 inputs = {
   module_name = "module-a"
-  resource_id = "resource-001-check-pr-counts-4"
+  resource_id = "resource-001-check-pr-counts-04"
 }
 
