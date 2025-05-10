@@ -1,3 +1,4 @@
+/*
 terraform {
   source = "../../base/main.tf"
 }
@@ -12,3 +13,4 @@ inputs = {
   module_name = "module-e"
   resource_id = "resource-003"
 }
+*/
