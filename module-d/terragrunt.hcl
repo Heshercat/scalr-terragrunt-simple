@@ -7,18 +7,17 @@ terraform {
 }
 
 locals {
-  exclude_d_from_plan_and_apply   = get_env("EXCLUDE_D_PLAN_APPLY", "false") == "true"
-  exclude_d_from_destroy          = get_env("EXCLUDE_D_DESTROY", "false") == "true"
-  exclude_d_but_allow_output      = get_env("EXCLUDE_D_ALL_EXCEPT_OUTPUT", "false") == "true"
-  exclude_d_for_dev_environment   = get_env("ENV", "") == "dev"
-}
+  # Flag inputs (from env)
+  exclude_d_from_plan_and_apply    = get_env("EXCLUDE_D_PLAN_APPLY", "false") == "true"
+  exclude_d_from_destroy           = get_env("EXCLUDE_D_DESTROY", "false") == "true"
+  exclude_d_but_allow_output       = get_env("EXCLUDE_D_ALL_EXCEPT_OUTPUT", "false") == "true"
+  exclude_d_for_dev_environment    = get_env("ENV", "") == "dev"
 
-locals {
   # Combined logic
-  exclude_all              = local.exclude_d_for_dev_environment
-  exclude_plan_apply       = local.exclude_d_from_plan_and_apply
-  exclude_destroy          = local.exclude_d_from_destroy
-  exclude_all_except_output = local.exclude_d_but_allow_output
+  exclude_all                      = local.exclude_d_for_dev_environment
+  exclude_plan_apply              = local.exclude_d_from_plan_and_apply
+  exclude_destroy                 = local.exclude_d_from_destroy
+  exclude_all_except_output       = local.exclude_d_but_allow_output
 }
 
 exclude {
