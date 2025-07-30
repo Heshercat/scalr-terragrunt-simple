@@ -1,3 +1,4 @@
+/*
 include {
   path = find_in_parent_folders("backend.hcl")
 }
@@ -11,3 +12,4 @@ inputs = {
   resource_id = "resource-001"
 }
 
+*/
